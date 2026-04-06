@@ -1,10 +1,8 @@
 {
   "mappings": [
-    "/content/newritsriva-ue/:/",
-    "/content/newritsriva-ue/configuration:/.helix/config.json",
-    "/content/newritsriva-ue/metadata:/metadata.json"
+    "/content/my-eds-site-2/:/"
   ],
   "includes": [
-    "/content/newritsriva-ue/"
+    "/content/my-eds-site-2/"
   ]
 }

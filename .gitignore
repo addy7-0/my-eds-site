@@ -7,7 +7,3 @@ helix-importer-ui
 .DS_Store
 *.bak
 .idea
-
-# Nested Launch rule bundles (keep repo lean; use Tags/CDN for similar assets)
-scripts/martech/libraries/launch/
-scripts/martech/libraries/launch_stag/

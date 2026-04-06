@@ -1,4 +1,2 @@
 helix-importer-ui
 dompurify.min.js
-# Vendor / minified martech bundles (not authored in this repo)
-scripts/martech/libraries/*.min.js
