@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p66302-e574366.adobeaemcloud.com/bin/franklin.delivery/adisharma_adobe/my-eds-site-2/main"
+    url: "https://author-p66302-e574366.adobeaemcloud.com/bin/franklin.delivery/adisharma_adobe/my-eds-site/main"
     type: "markup"
     suffix: ".html"
