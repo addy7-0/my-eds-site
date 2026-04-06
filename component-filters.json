@@ -15,7 +15,19 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "custom-asset-one",
+      "custom-asset-one-required",
+      "quote",
+      "icon-and-text-container",
+      "image-and-text-container",
+      "link-list",
+      "logo",
+      "menu",
+      "region-selector",
+      "login",
+      "shopping-cart-widget",
+      "help"
     ]
   },
   {
@@ -37,14 +49,6 @@
       "image",
       "button",
       "title"
-    ]
-  },
-  {
-    "id": "section",
-    "components": [
-      "text",
-      "image",
-      "button"
     ]
   }
 ]
