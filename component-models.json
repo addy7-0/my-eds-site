@@ -193,11 +193,472 @@
     "id": "hero",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
+        "component": "custom-asset-namespace:custom-asset",
         "name": "image",
         "label": "Image",
-        "multi": false
+        "configUrl": "https://main--newedsue--RitwikSrivastava.aem.page/tools/asset-selector/image.config.json",
+        "valueType": "string"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset-mimetype",
+        "valueType": "string",
+        "name": "imageMimeType"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "empty1",
+        "value": "",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "empty2",
+        "value": "",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "empty3",
+        "value": "",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "empty4",
+        "value": "",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "icon-and-text-container",
+    "fields": [
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Layout (e.g., layout-1-col)",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "alignment",
+        "label": "Alignment (e.g., left-aligned)",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "icon-and-text",
+    "fields": [
+      {
+        "component": "text",
+        "name": "icon",
+        "label": "Icon Class (e.g., icon-runway_pictogram_roo) or upload image",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text (for images only)",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "hideAltText",
+        "label": "Hide Alt Text (true/false)",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "label": "Content (H2 + paragraphs + links)",
+        "valueType": "string",
+        "value": "<h2>Our company</h2><p>The red tail and iconic kangaroo logo stands for excellence in safety, reliability, engineering and customer service. The Qantas Group is made up of two complementary airline brands – Qantas and Jetstar – as well as subsidiary companies, ranging from Qantas Loyalty to Qantas Freight. Our airline brands operate regional, domestic and international services across Australia and the world.</p><p><a href=\"https://www.qantas.com/au/en/qantas-group.html\">More about the Qantas Group</a></p>"
+      }
+    ]
+  },
+  {
+    "id": "image-and-text-container",
+    "fields": [
+      {
+        "component": "text",
+        "name": "columns",
+        "label": "Layout",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "imageAlignment",
+        "label": "Alignment",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "image-and-text",
+    "fields": [
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "name": "image",
+        "label": "Image",
+        "configUrl": "https://main--newedsue--RitwikSrivastava.aem.page/tools/asset-selector/image.config.json",
+        "valueType": "string"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset-mimetype",
+        "valueType": "string",
+        "name": "imageMimeType"
+      },
+      {
+        "component": "text",
+        "name": "hideAltText",
+        "label": "Hide Alt Text (true/false)",
+        "valueType": "string",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "name": "caption",
+        "label": "Caption (optional)",
+        "valueType": "string",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "name": "badge",
+        "label": "Badge (optional)",
+        "valueType": "string",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "name": "category",
+        "label": "Category (optional)",
+        "valueType": "string",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string",
+        "value": "<h2>Our fleet</h2>"
+      },
+      {
+        "component": "text",
+        "name": "empty1",
+        "value": "",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "bodyText",
+        "label": "Body Text",
+        "valueType": "string",
+        "value": "Learn about the features of the aircraft in our fleet, including the Airbus A380 and Boeing 787-9 Dreamliner."
+      },
+      {
+        "component": "richtext",
+        "name": "ctas",
+        "label": "Call to Action Links",
+        "valueType": "string",
+        "value": "<a href=\"https://www.qantas.com/au/en/about-us/our-company/fleet.html\">Explore our fleet</a>"
+      },
+      {
+        "component": "text",
+        "name": "empty2",
+        "value": "",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "link-list",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "heading",
+        "label": "Heading",
+        "valueType": "string",
+        "value": "<h2>Related pages</h2>"
+      },
+      {
+        "component": "text",
+        "name": "buildListType",
+        "label": "Build List Type (fixedList or childPages)",
+        "valueType": "string",
+        "value": "fixedList"
+      },
+      {
+        "component": "text",
+        "name": "childPagesParentPage",
+        "label": "Child Pages Parent Page (leave empty for fixedList)",
+        "valueType": "string",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "name": "orderBy",
+        "label": "Order By (jcr:title or other)",
+        "valueType": "string",
+        "value": "jcr:title"
+      },
+      {
+        "component": "text",
+        "name": "sortOrder",
+        "label": "Sort Order (ascending or descending)",
+        "valueType": "string",
+        "value": "ascending"
+      },
+      {
+        "component": "text",
+        "name": "excludeUrl",
+        "label": "Exclude URLs (comma-separated)",
+        "valueType": "string",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "link",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "link",
+        "label": "Link (use link button in editor to create)",
+        "valueType": "string",
+        "value": "<a href=\"https://www.qantas.com\">Link text</a>"
+      }
+    ]
+  },
+  {
+    "id": "custom-asset-one",
+    "fields": [
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "name": "image",
+        "label": "Image",
+        "configUrl": "https://main--newedsue--RitwikSrivastava.aem.page/tools/asset-selector/image.config.json",
+        "valueType": "string"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset-mimetype",
+        "valueType": "string",
+        "name": "imageMimeType"
+      },
+      {
+        "component": "text",
+        "name": "imageTitle",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+          "name": "rotation",
+          "value": "",
+          "label": "Rotation",
+          "description": "Select the rotation which will rotate the image.",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "None",
+              "value": ""
+            },
+            {
+              "name": "30",
+              "value": "30"
+            },
+            {
+              "name": "45",
+              "value": "45"
+            },
+            {
+              "name": "60",
+              "value": "60"
+            },
+            {
+              "name": "90",
+              "value": "90"
+            },
+            {
+              "name": "120",
+              "value": "120"
+            },
+            {
+              "name": "180",
+              "value": "180"
+            },            
+            {
+              "name": "270",
+              "value": "270"
+            },
+            {
+              "name": "300",
+              "value": "300"
+            },
+            {
+              "name": "330",
+              "value": "330"
+            }
+          ]
+        },
+      {
+        "component": "text",
+        "name": "preset",
+        "label": "Image Preset",
+        "description": "Enter the Dynamic Media image preset name to apply (e.g. 'my-preset'). Leave empty to use default delivery.",
+        "valueType": "string",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "custom-asset-one-required",
+    "fields": [
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "name": "image",
+        "label": "Image",
+        "description": "Require d. Select an image using the custom asset picker (author paths and Dynamic Media delivery URLs when configured).",
+        "required": true,
+        "configUrl": "https://main--newedsue--RitwikSrivastava.aem.page/tools/asset-selector/image.config.json",
+        "valueType": "string"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset-mimetype",
+        "valueType": "string",
+        "name": "imageMimeType"
+      },
+      {
+        "component": "text",
+        "name": "imageTitle",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "rotation",
+        "value": "",
+        "label": "Rotation",
+        "description": "Select the rotation which will rotate the image.",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
+          {
+            "name": "30",
+            "value": "30"
+          },
+          {
+            "name": "45",
+            "value": "45"
+          },
+          {
+            "name": "60",
+            "value": "60"
+          },
+          {
+            "name": "90",
+            "value": "90"
+          },
+          {
+            "name": "120",
+            "value": "120"
+          },
+          {
+            "name": "180",
+            "value": "180"
+          },
+          {
+            "name": "270",
+            "value": "270"
+          },
+          {
+            "name": "300",
+            "value": "300"
+          },
+          {
+            "name": "330",
+            "value": "330"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "preset",
+        "label": "Image Preset",
+        "description": "Enter the Dynamic Media image preset name to apply (e.g. 'my-preset'). Leave empty to use default delivery.",
+        "valueType": "string",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "dm-image",
+    "fields": [
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "name": "image",
+        "label": "DM Image",
+        "description": "Select a Dynamic Media delivery URL via the custom asset picker.",
+        "configUrl": "https://main--newedsue--RitwikSrivastava.aem.page/tools/asset-selector/image.config.json",
+        "valueType": "string"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset-mimetype",
+        "valueType": "string",
+        "name": "imageMimeType"
       },
       {
         "component": "text",
@@ -207,11 +668,150 @@
         "value": ""
       },
       {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
+        "component": "text",
+        "valueType": "string",
+        "name": "origin",
+        "label": "DM Origin (optional)",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "priority",
+        "label": "Priority (true/false)",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "preset",
+        "label": "Preset (optional)",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "smartCrop",
+        "label": "Smart Crop (optional)",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "role",
+        "label": "Role (optional)",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "quote",
+    "fields": [
+       {
+         "component": "richtext",
+         "name": "quote",
+         "value": "",
+         "label": "Quote",
+         "valueType": "string"
+       },
+       {
+         "component": "text",
+         "valueType": "string",
+         "name": "author",
+         "label": "Author",
+         "value": ""
+       }
+     ]
+  },
+  {
+    "id": "logo",
+    "fields": [
+      {
+        "component": "text",
+        "name": "iconFilename",
+        "label": "Logo Icon Filename (e.g., runway_brand_logo_master_qantas_horiz.svg)",
+        "valueType": "string",
+        "value": "runway_brand_logo_master_qantas_horiz.svg"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "valueType": "string",
+        "value": "Home, Qantas Airways Logo"
+      },
+      {
+        "component": "text",
+        "name": "link",
+        "label": "Link URL",
+        "valueType": "string",
+        "value": "/"
+      }
+    ]
+  },
+  {
+    "id": "menu",
+    "fields": [
+      {
+        "component": "text",
+        "name": "heading",
+        "label": "Menu Heading",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "menu-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Link Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "link",
+        "label": "Link (use link button to add URL)",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "icon",
+        "label": "Icon filename (e.g., runway_icon_social_facebook.svg)",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "region-selector",
+    "fields": [
+      {
+        "component": "text",
+        "name": "regionSelectionUrl",
+        "label": "Region Selection Page URL",
+        "valueType": "string",
+        "value": "/en-au/region-selection"
+      }
+    ]
+  },
+  {
+    "id": "login",
+    "fields": []
+  },
+  {
+    "id": "shopping-cart-widget",
+    "fields": []
+  },
+  {
+    "id": "help",
+    "fields": [
+      {
+        "component": "text",
+        "name": "helpUrl",
+        "label": "Help Page URL",
+        "valueType": "string",
+        "value": "https://help.qantas.com/support/s/"
       }
     ]
   }
